@@ -4,7 +4,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 const Signup = () => {
-
+  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
   let navigate = useNavigate();
   const [user, setUser] = useState({
     name: "",
@@ -25,7 +25,7 @@ const Signup = () => {
   const handleUser = async (e) => {
     e.preventDefault();
     // console.log(user);
-    let res = await fetch("https://mediaapp-i6ao.onrender.com/api/users/create", {
+    let res = await fetch(url+"/api/users/create", {
       method: "POST",
       headers: {
         "content-type": "application/json",
