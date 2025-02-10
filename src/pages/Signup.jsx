@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 
 const Signup = () => {
   let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+  console.log(url)
   let navigate = useNavigate();
   const [user, setUser] = useState({
     name: "",
