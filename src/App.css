@@ -1,0 +1,11 @@
+body{
+  background-color:#1F2937;
+}
+#messages{
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+#messages::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
