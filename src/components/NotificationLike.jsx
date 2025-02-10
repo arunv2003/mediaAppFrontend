@@ -6,7 +6,7 @@ import { toast } from 'react-toastify'
 
 const NotificationLike = () => {
 
-  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
   let ctx = useContext(UserContext)
   // console.log(ctx.arr)
   let friendLike=ctx.arr

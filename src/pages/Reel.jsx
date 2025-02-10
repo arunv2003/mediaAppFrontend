@@ -22,7 +22,7 @@ const Reel = () => {
   const token = ctx?.userInfo?.token || '';
 
   const getAllPost = async () => {
-    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
     try {
       const res = await axios.get(url+"/api/posts/allGet");
       setPost(res.data.Posts || []);

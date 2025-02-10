@@ -10,7 +10,7 @@ import { formatDistanceToNow } from "date-fns";
 import "../App.css";
 
 const Message = () => {
-    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
     let Endpoint = url
     const socketRef = useRef();
     //  let socket =io(Endpoint,{transports:['websocket']});

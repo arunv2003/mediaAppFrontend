@@ -6,7 +6,7 @@ import axios from "axios";
 
 
 const userState = (props) => {
-  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
   let userCtx = useContext(UserContext);
   let userDetail = JSON.parse(localStorage.getItem("social"));
   const [userInfo, setUserInfo] = useState({

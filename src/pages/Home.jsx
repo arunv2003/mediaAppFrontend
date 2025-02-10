@@ -12,7 +12,7 @@ import { MdDelete } from "react-icons/md";
 import { io } from "socket.io-client";
 
 const Home = () => {
-  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
   let Endpoint = url
   const socketRef = useRef();
 

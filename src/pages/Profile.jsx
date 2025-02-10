@@ -8,7 +8,7 @@ import { MdDelete } from "react-icons/md";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 
 const Profile = () => {
-    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
 
     const [isModalOpens, setIsModalOpens] = useState(false);
     const showModals = () => {

@@ -4,7 +4,7 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import UserContext from "../context/UserContext";
 const Login = () => {
-  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
   let addUserCtx=useContext(UserContext)
   // console.log(addUserCtx)
   

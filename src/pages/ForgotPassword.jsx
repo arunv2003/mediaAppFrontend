@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import { toast } from 'react-toastify'
 
 const ForgotPassword = () => {
-    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+    let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
     let emailRef=useRef()
     const handleSubmit=async(e)=>{
        e.preventDefault()

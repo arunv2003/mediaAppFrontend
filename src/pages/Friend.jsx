@@ -7,7 +7,7 @@ import { toast } from 'react-toastify';
 import { Link, useLocation } from 'react-router-dom';
 
 const Friend = () => {
-  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.BACKEND_URL:"http://localhost:5002";
+  let url=import.meta.env.VITE_DEPLOYEMENT==="production"?import.meta.env.VITE_BACKEND_URL:"http://localhost:5002";
   let locution = useLocation()
   // console.log(locution.state)
 
